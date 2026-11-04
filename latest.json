@@ -1,16 +1,16 @@
 {
-  "tag_name": "v99.99-build69",
-  "name": "WenKai Music 99.99 (69)",
-  "body": "# 文凯音乐 99.99 / 构建 69\n\n- 每次冷启动自动检查应用更新，不再等待上次检查后的六小时。\n- 去掉竖屏播放页歌曲信息底部额外的 Tt 图标；歌词菜单、横屏字体入口保留。\n- 修复从歌手搜索进入详情仍请求旧私有服务的问题。网易歌手资料、歌曲分页\n  改用公开目录，播放继续使用已安装的音源插件。\n- 包名保留 `com.luna.music`，显示名文凯音乐，显示版本 `99.99`。\n\n## 音源检测说明\n\n音源检测使用应用内置的各平台样本歌曲，通过插件的 `musicUrl` 动作取链，\n随后进行轻量 HTTP Range 或 HLS 资源探测。快速检测只检查部分声明音质，\n结果仅代表该样本、音质和当时网络，不代表整个插件的所有歌曲。\n\n应用更新和插件更新是两条独立链路；本次启动检查针对应用 GitHub 发布版本。\n插件更新仍由插件管理器及脚本提供的更新通知/地址决定，不会自动替换脚本。\n\n当前模拟器导入的两个插件没有声明歌手搜索/详情动作，因此不能把它们当作\n歌手目录。现阶段歌手目录使用网易来源，其他目录来源会明确提示不支持，\n不会继续请求旧 GZ 登录服务。\n\n已知待定位问题：个别环境反馈音源检测显示“当前版本已停止服务”。\n本次未复现此提示，也未修改检测核心或插件服务授权，不将它列为已修复项。\n\nSHA-256 (`WenKaiMusic-99.99-v69-com.luna.music.apk`):\n`6e058a00a08ef42519bf45ae99ff9e3fc42df6c21eab459f115a401c8254cdab`",
+  "tag_name": "v99.99-build70",
+  "name": "WenKai Music 99.99 (70)",
+  "body": "# 文凯音乐 99.99 (70)\n\n- 新版个人中心：浅色材质背景、封面播放卡片、实时进度和四列音乐收藏。\n- 应用内下载更新，支持后台下载、进度、取消、重试；校验后由系统确认安装。\n- 新增音源订阅地址，支持 `plugins` 数组中的 `url` 字符串。\n- 可在每次冷启动自动同步，未变化的插件不重复导入，失败保留原插件。\n- 可在同步后自动对已启用的订阅插件快速检测，检测结果保留在插件管理中。\n\n包名仍为 `com.luna.music`，显示名称仍为文凯音乐。\n音源订阅仅适用于现有 LX 插件，不包含 MusicFree 兼容引擎。\n第三方脚本的服务状态和真实授权要求不会被绕过。\n\nSHA-256 (`WenKaiMusic-99.99-v70-com.luna.music.apk`):\n`67ae601a956b4a0c7d2d9b2a1069360a8009b8fff94fb0dcae81f4f7b22d537f`",
   "draft": false,
   "prerelease": false,
-  "published_at": "2026-11-04T05:31:15Z",
+  "published_at": "2026-11-04T06:35:11Z",
   "assets": [
     {
-      "url": "https://api.github.com/repos/Pride-lee/wenkai-music-releases/releases/assets/708358156",
-      "id": 708358156,
-      "node_id": "RA_kwDOViLMzc4qOLAM",
-      "name": "WenKaiMusic-99.99-v69-com.luna.music.apk",
+      "url": "https://api.github.com/repos/Pride-lee/wenkai-music-releases/releases/assets/708507924",
+      "id": 708507924,
+      "node_id": "RA_kwDOViLMzc4qOvkU",
+      "name": "WenKaiMusic-99.99-v70-com.luna.music.apk",
       "label": "",
       "uploader": {
         "login": "Pride-lee",
@@ -35,12 +35,12 @@
       },
       "content_type": "application/vnd.android.package-archive",
       "state": "uploaded",
-      "size": 26173438,
-      "digest": "sha256:6e058a00a08ef42519bf45ae99ff9e3fc42df6c21eab459f115a401c8254cdab",
+      "size": 26189822,
+      "digest": "sha256:67ae601a956b4a0c7d2d9b2a1069360a8009b8fff94fb0dcae81f4f7b22d537f",
       "download_count": 0,
-      "created_at": "2026-11-04T05:30:00Z",
-      "updated_at": "2026-11-04T05:31:14Z",
-      "browser_download_url": "https://github.com/Pride-lee/wenkai-music-releases/releases/download/v99.99-build69/WenKaiMusic-99.99-v69-com.luna.music.apk"
+      "created_at": "2026-11-04T06:35:02Z",
+      "updated_at": "2026-11-04T06:35:10Z",
+      "browser_download_url": "https://github.com/Pride-lee/wenkai-music-releases/releases/download/v99.99-build70/WenKaiMusic-99.99-v70-com.luna.music.apk"
     }
   ]
 }
