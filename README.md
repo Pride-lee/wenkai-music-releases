@@ -1,2 +1,18 @@
-# wenkai-music-releases
-WenKai Music Android releases and update notes. Source code is maintained separately.
+# 文凯音乐安装包
+
+这里仅发布文凯音乐 Android 安装包与版本改动说明，源码在独立私有仓库维护。
+不收录用户导入的音源插件、用户数据、签名私钥或访问凭据。
+
+## 下载
+
+在 [Releases](https://github.com/Pride-lee/wenkai-music-releases/releases) 中下载正式版本。
+当前交付变体包标识为 `com.luna.music`，应用显示名称为“文凯音乐”。
+
+- 版本名保持 `99.99`，用括号内的构建号区分更新，例如 `99.99 (67)`。
+- 自构建 67 开始，应用可自动提示更新，也可在个人中心点击“检查应用更新”。
+- 点击应用内下载按钮后，由浏览器下载 APK，再由用户确认安装。
+- 使用同包名、同签名的新版本覆盖安装可保留数据；请不要为了更新而先卸载。
+- 如果应用安装器提示签名不同，请勿直接卸载旧版本，先确认安装包来源并备份数据。
+
+发布标签格式为 `v99.99-build67`。普通 Git 提交不是新安装包，正式 Release 才是更新。
+每个版本的改动与 APK SHA-256 见相应发布说明。
