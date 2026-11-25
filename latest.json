@@ -1,16 +1,16 @@
 {
-  "tag_name": "v99.99-build78",
-  "name": "WenKai Music 99.99 (78)",
-  "body": "# 文凯音乐 99.99 · 构建 78\n\n- **最近播放**：修复快速取址和缓存播放时漏记历史的问题。列表满 200 首后，新播放或重播的歌曲仍会排到最前。\n- **歌单导出**：「分享歌单」改为「导出歌单」，可保存为落雪格式的 `.lxmc` 文件；移除赞助用户封面同步云端菜单。\n- **歌曲评论**：更新播放页评论图标，改善评论页专辑封面加载，并为手机状态栏预留空间。\n- **个人中心**：移除「听歌排行」，保留「听歌统计」及播放卡片原来的深色渐变。首页音乐排行榜不变。\n\n包名 `com.luna.music`，显示版本 `99.99`，构建号 `78`。\n\nSHA-256 (`WenKaiMusic-99.99-v78-com.luna.music.apk`):\n`3ff8604a7ddad0f84b70efed07e66cb101dde9155cb1a28ce2a8c34badecfda3`",
+  "tag_name": "v99.99.99-build79",
+  "name": "WenKai Music 99.99.99 (79)",
+  "body": "# 文凯音乐 99.99.99 · 构建 79\n\n仅更新版本号：从 `99.99 (78)` 升级为 `99.99.99 (79)`，功能不变。\n沿用包名 `com.luna.music` 和原签名，可直接覆盖安装，无需卸载旧版。\n\nSHA-256 (`WenKaiMusic-99.99.99-v79-com.luna.music.apk`):\n`40585ad043ac82360e808e16d6de0eb4f3c6fcfc982c66acc17ca31b6888866b`",
   "draft": false,
   "prerelease": false,
-  "published_at": "2026-11-25T05:44:08Z",
+  "published_at": "2026-11-25T13:27:57Z",
   "assets": [
     {
-      "url": "https://api.github.com/repos/Pride-lee/wenkai-music-releases/releases/assets/790239560",
-      "id": 790239560,
-      "node_id": "RA_kwDOViLMzc4vGhlI",
-      "name": "WenKaiMusic-99.99-v78-com.luna.music.apk",
+      "url": "https://api.github.com/repos/Pride-lee/wenkai-music-releases/releases/assets/791668565",
+      "id": 791668565,
+      "node_id": "RA_kwDOViLMzc4vL-dV",
+      "name": "WenKaiMusic-99.99.99-v79-com.luna.music.apk",
       "label": "",
       "uploader": {
         "login": "Pride-lee",
@@ -36,11 +36,11 @@
       "content_type": "application/vnd.android.package-archive",
       "state": "uploaded",
       "size": 26714501,
-      "digest": "sha256:3ff8604a7ddad0f84b70efed07e66cb101dde9155cb1a28ce2a8c34badecfda3",
+      "digest": "sha256:40585ad043ac82360e808e16d6de0eb4f3c6fcfc982c66acc17ca31b6888866b",
       "download_count": 0,
-      "created_at": "2026-11-25T05:43:47Z",
-      "updated_at": "2026-11-25T05:44:06Z",
-      "browser_download_url": "https://github.com/Pride-lee/wenkai-music-releases/releases/download/v99.99-build78/WenKaiMusic-99.99-v78-com.luna.music.apk"
+      "created_at": "2026-11-25T13:27:35Z",
+      "updated_at": "2026-11-25T13:27:55Z",
+      "browser_download_url": "https://github.com/Pride-lee/wenkai-music-releases/releases/download/v99.99.99-build79/WenKaiMusic-99.99.99-v79-com.luna.music.apk"
     }
   ]
 }
